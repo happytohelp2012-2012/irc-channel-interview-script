@@ -8,7 +8,7 @@ Sends an ntfy notification every time interviews are active, and if it’s **you
 ## 1) Requirements
 - **Python 3.10+** (use the installer scripts I provided if needed).
 - Internet access to your **ntfy** server/topic.
-- Textual IRC logs saved locally (the script follows the **newest** file and handles midnight rotation).
+- IRC logs saved locally (the script follows the **newest** file and handles midnight rotation).
 
 ---
 
