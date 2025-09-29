@@ -3,9 +3,9 @@
 These scripts check if Python is installed and **version >= 3.10**. If not, they install a current Python 3.12 using the simplest method for the OS.
 
 ## Files
-- **macOS:** `install-python.command` (double-click to run)
-- **Linux:** `install-python.sh` (run with `bash install-python.sh`)
-- **Windows:** `install-python.ps1` (right‑click → “Run with PowerShell”)
+- **macOS:** `macos-install-python.command` (double-click to run)
+- **Linux:** `linux-install-python.sh` (run with `bash linux-install-python.sh`)
+- **Windows:** `windows-install-python.ps1` (right‑click → “Run with PowerShell”)
 
 ## What they do
 1. Detect current Python version.
@@ -16,18 +16,18 @@ These scripts check if Python is installed and **version >= 3.10**. If not, they
 
 ### macOS
 1. Download and unzip.
-2. If needed: `chmod +x install-python.command`
-3. Double‑click `install-python.command`.
+2. If needed: `chmod +x macos-install-python.command`
+3. Double‑click `macos-install-python.command`.
 4. When it finishes, you should see `✅ Python is ready. Use: python3`.
 
 ### Linux
 ```bash
-bash install-python.sh
+bash linux-install-python.sh
 ```
 You may be prompted for your password (to install packages).
 
 ### Windows
-1. Right‑click `install-python.ps1` → **Run with PowerShell**.
+1. Right‑click `windows-install-python.ps1` → **Run with PowerShell**.
 2. If PowerShell blocks the script, temporarily allow it for this session:
    ```powershell
    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
