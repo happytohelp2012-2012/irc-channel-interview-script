@@ -16,7 +16,7 @@ Sends an ntfy notification every time interviews are active, and if it’s **you
 Open `interview_notify.py` and check these at the top:
 
 ```python
-LOG_ROOT = "YOUR-PATCH-TO-THE-LOGFILES"
+LOG_ROOT = "YOUR-PATH-TO-THE-LOGFILES"
 TOPIC = "YOUR-UNIQUE-TOPIC-ON-NTFY"
 MY_NICK = "YOUR-IRC-NICK"
 BOT_NAMES = {"Gatekeeper", "GK"}
@@ -66,7 +66,7 @@ Edit and then paste the following in a terminal to append test lines into **toda
 ```bash
 LOG="YOUR-PATCH-TO-THE-LOGFILES/$(date +%F).txt"
 
-printf "[%s] <%%Gatekeeper> Currently interviewing: other-random-user ::: #red-interview-01 ::: 48 remaining in queue.\n" "$(date -Iseconds)" >> "$LOG"
+printf "[%s] <%%Gatekeeper> Currently interviewing: other-random-nick ::: #red-interview-01 ::: 48 remaining in queue.\n" "$(date -Iseconds)" >> "$LOG"
 
 printf "[%s] <%%Gatekeeper> Currently interviewing: YOUR-IRC-NICK ::: #red-interview-02 ::: 40 remaining in queue.\n" "$(date -Iseconds)" >> "$LOG"
 ```
@@ -82,6 +82,6 @@ printf "[%s] <%%Gatekeeper> Currently interviewing: YOUR-IRC-NICK ::: #red-inter
 - **Bot nick mismatch?** Ensure `BOT_NAMES` matches exactly what appears in your logs.
 - **ntfy check:** Verify your topic/server with a quick test:
   ```bash
-  curl -d "test" -H "Title: hello" https://ntfy.sh/YOUR_TOPIC
+  curl -d "test" -H "Title: hello" https://ntfy.sh/YOUR-UNIQUE-TOPIC-ON-NTFY
   ```
 - **Still nothing?** Watch the script output for `[info]` lines indicating matches or log rotation.
