@@ -1,4 +1,5 @@
-# Installer Scripts and NTFY
+# IRC Notification Scripts
+These are scripts that will send notifications when certain criteria are met. This example version is set up so that one script sends notifications when interviews are happening, or when you have an interview, in the fictious IRC channel #RED-invites. The other script sends notifications when the interview queue opens in the fictious IRC channel #recruitment. Perhaps you can find use for this script somehow. Just keep it legal, plz.
 
 ## Python Installer Scripts (Forgiving: accept >= 3.10)
 
